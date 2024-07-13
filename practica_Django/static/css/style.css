@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'Corona';
+    src: url(../fonts/Corona.ttf);
+    font-family:'burtons' ;
+    src: url(../fonts/burtons.ttf);
+}
+:root{
+    --color-text:#164f6a;
+    --color-nav-background: linear-gradient(#7AC4D1, #82a4aa);
+    --font-title:'burtons';
+    --font-body:'Corona';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    background: var(--color-nav-background);
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img{
+    margin:2vw;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+    
+}
+
+nav ul li{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+    color: var(--color-background);
+}
+
+main{
+    background-color: var(--color-border);
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+
+footer {
+    width: 100vw;
+    background: var(--color-nav-background); 
+    align-items: center;
+    height: 130px;
+    font-family: var(--font-title);
+}
