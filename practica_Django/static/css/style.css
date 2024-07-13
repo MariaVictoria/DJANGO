@@ -67,6 +67,9 @@ footer {
     width: 100vw;
     background: var(--color-nav-background); 
     align-items: center;
-    height: 130px;
+    min-height: 130px;
     font-family: var(--font-title);
+}
+footer img{
+    margin: 25px;
 }
