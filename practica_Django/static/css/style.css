@@ -74,15 +74,16 @@ main{
     background-color: var(--color-background);
    }
 
-.about{
+.about {
     display: flex;
 }
 .random-img{
     border: 2px solid black;
 }
+
 .about-contnent{
-    width: 350px ;
-    padding: 25px ;
+    width: 350px;
+    padding: 25px;
 }
 
 .imagenes{
