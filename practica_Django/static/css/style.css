@@ -9,12 +9,19 @@
     --color-nav-background: linear-gradient(#7AC4D1, #82a4aa);
     --font-title:'burtons';
     --font-body:'Corona';
+    --color-background:#b9d3d8;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+p{
+    color: var(--color-text);
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 20px;
 }
 
 nav {
@@ -58,7 +65,32 @@ nav ul li a:hover{
 }
 
 main{
-    background-color: var(--color-border);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 50px;
+    background-color: var(--color-background);
+   }
+
+.about{
+    display: flex;
+}
+
+.about-contnent{
+    width: 350px ;
+    padding: 25px ;
+}
+
+.imagenes{
+    width: 200px;  
+    height: 300px; 
+    border: 2px solid black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
     color: var(--color-text);
     font-family: var(--font-body);
 }
@@ -66,10 +98,33 @@ main{
 footer {
     width: 100vw;
     background: var(--color-nav-background); 
-    align-items: center;
-    min-height: 130px;
-    font-family: var(--font-title);
+    min-height: 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center ;
 }
 footer img{
     margin: 25px;
 }
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li a{
+    color:var(--color-text);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer ul li a:hover{
+    color: var(--color-background);
+}
+ 
+footer p{
+    font-size: 10px;
+}
+
+
+
+

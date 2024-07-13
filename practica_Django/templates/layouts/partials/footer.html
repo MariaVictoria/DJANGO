@@ -1,13 +1,25 @@
 {% load static %}
 <footer>
-    <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo" width="50">
-    <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href="https://github.com/MariaVictoria" class="btn btn-outline-secondary" style="color: #0e292c;">
-        <i class="fab fa-github fa-3x" style="color: #0e292c;"></a></i> GitHub
-    </ul>
-    <p style="color: #0e292c;">&copy;2024. Todos los derechos reservados</p>
+    <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo" width="100">
     
-   
+    <p>&copy; 2024. Todos los derechos reservados. </p>
+         
+     <ul>
+        <li><a href="{% url 'index'%}">Inicio</a></li>
+        <li><a href="{% url 'portfolio'%}">Portfolio</a></li>
+    </ul>
+    <ul>
+        <li>
+            <a href="{% url 'index'%}">Otro</a>
+        </li>
+        <li>
+            <a href="{% url 'portfolio'%}">Otro</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="https://github.com/        MariaVictoria" style="color: #0e292c;"
+         class="fab fa-github fa-3x" style="color: #0e292c;"></a>
+        </i>
+    </ul>   
 </footer>
