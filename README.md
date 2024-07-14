@@ -1,2 +1,5 @@
 # DJANGO
- Practica Django 2024
+ En este espacio realizo la primera práctica Django.-
+
+ 2024.-
+ 
