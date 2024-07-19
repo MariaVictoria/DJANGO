@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>title</title>
+  </head>
+  <body>
+    <h3>Total de autores:{{authors|length}}</h3>
+
+    <h3>Buscando elementos cuyo  id sea menor o igual a 15:</h3>
+    <ul>
+        {% for filt in filtered2 %}
+        <li>{{filt.email}}</li>
+        {% endfor%}
+        </ul>
+
+    <h3>Obteniendo un unico elemento (filtrado por id):</h3>
+        <p>{{author}}</p>
+
+    <h3>Obteniendo los 10 primeros elementos(limit):</h3>
+        <ul>
+        {% for lim in limits %}
+        <li>{{lim.email}}</li>
+        {% endfor%}
+        </ul>
+
+    <h3>Obteniendo los 5 primeros elementos saltando los 5 primeros (con offset):</h3>
+        <ul>
+        {% for skp in skiping %}
+        <li>{{skp.email}}</li>
+        {% endfor%}
+        </ul>
+
+    <h4>Autores que contienen informacion de : food</h4>
+        <ul>
+        {% for author in filtered %}
+        <li>{{author.name}}</br> : •  {{author.email}}</li>
+        {% endfor%}
+        </ul>
+
+   
+    <h3>Todos los autores ordenados por email (ascendiente): </h3>
+        <ul>
+        {% for order in asc %}
+        <li>{{order.email}}</li>
+        {% endfor%}
+  
+        </ul>
+
+    <h3>Todos los autores</h3>
+    <ul>
+    {% for author in authors %}
+    <li>{{author.name}}: •  ({{author.email}})</li>
+    {% endfor%}
+    </ul>
+ 
+  </body>
+</html>

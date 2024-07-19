@@ -8,11 +8,11 @@
 }
 
 :root{
-    --color-text:#164f6a;
+    --color-text:#04312a;
     --color-nav-background: linear-gradient(#7AC4D1, #82a4aa);
     --font-title:'burtons';
     --font-body:'Corona';
-    --color-background:#b9d3d8;
+    --color-background:#83a89c;
 }
 
 *{

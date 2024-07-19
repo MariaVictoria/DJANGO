@@ -1,0 +1,23 @@
+orl
+
+* manage : archivo pone a disposicion las estructura o instrucciones de consola para gestionar el proyecto
+    migrate
+    runserver
+    makemigrations => crea los modelos
+
+* modular- modelar - el contenido. cada aplicacion es gestionada como un paquete
+cada modelo es una clase.-
+
+comentarios = app
+
+* urls : a la url se le asocia un controlador - se le asigna una view- 
+rutas-vistas
+
+* settings: paquete que contiene por ej, recursos o aps intaladas, algunas utilidades de seguridad en middleware
+la config de la db.-
+
+
+python manage.py migrate
+
+python manage.py runserver
+
