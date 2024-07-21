@@ -1,0 +1,10 @@
+<h1>POST FORM</h1>
+
+<form action="{% url 'postgoal' %}" method="POST" >
+    {% csrf_token %}
+    <label>Nombre</label>
+    <input type="text" name="info" placeholder="Escribe algo...">
+
+    <input type="submit" value="Send">
+
+ </form>
