@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Form - Django</title> 
+    
+</head>
+<body>
+    <h1>Contact Form - Django</h1>
+    <hr>
+    <form action="{% url 'goal' %}" method="POST">
+        {% csrf_token %}
+        {{ comment_form }}
+        <input type='submit' value='Enviar'>
+    </form>
+    <hr>
+</body>
+</html>

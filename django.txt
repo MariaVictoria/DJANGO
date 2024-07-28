@@ -16,6 +16,8 @@ rutas-vistas
 * settings: paquete que contiene por ej, recursos o aps intaladas, algunas utilidades de seguridad en middleware
 la config de la db.-
 
+*views = renderizamos la plantilla. primero pasamos la request, luego pasamos en la url el nombre de la vista (plantilla) y el contexto
+
 
 python manage.py migrate
 
