@@ -1,5 +1,5 @@
 # DJANGO
- En este espacio realizo la primera práctica Django.-
+ En este espacio realizo prácticas Django.-
 
  2024.-
  
